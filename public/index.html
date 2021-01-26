@@ -45,7 +45,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="index.js"></script>
   <script>
-    ("serviceworker" in navigator) {
+    ("serviceWorker" in navigator) {
     window.adEventListener("load", () => {
       navigator.serviceWorker.register("service-worker.js").then(reg => {
         console.log("Located the service worker file", reg);
