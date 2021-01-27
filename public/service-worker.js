@@ -44,7 +44,7 @@ self.addEventListener("activate", function(evt) {
 // fetch
 self.addEventListener("fetch", function(evt) {
   // cache successful requests to the API
-  if (evt.request.url.includes("/routes/api")) {
+  if (evt.request.url.includes("routes/api")) {
     evt.respondWith(
       caches.open(DATA_CACHE_NAME).then(cache => {
         return fetch(evt.request)
@@ -66,7 +66,7 @@ self.addEventListener("fetch", function(evt) {
     return;
   }
 
- // use off-offline if the request is not for the API
+ // use off-line if the request is not for the API
   evt.respondWith(
     caches.match(evt.request).then(function(response) {
       return response || fetch(evt.request);
