@@ -1,7 +1,7 @@
 # Offline Budget Tracker
 
 ### GitHub Repo: https://github.com/kellys-tech/OfflineBudgetTracker
-### Heroku: https://gentle-coast-70424.herokuapp.com/
+### Heroku: https://blooming-waters-99553.herokuapp.com/
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
